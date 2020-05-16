@@ -8,36 +8,19 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
-    button {
-      /* Inspired by https://1stwebdesigner.com/free-code-snippets-css-buttons/ */
-      color: #444444;
-      background: #F3F3F3;
-      border: 2px #021a40 solid;
-      padding: 10px 20px;
-      border-radius: 4px;
-      font-weight: bold;
-      font-size: 18pt;
-      outline: none;
-      display: block;
-      position: absolute;
-      left: 45%;
-      top:75%;
-      z-index:4;
-      font-family: roboto;
-   }
-    img{
-      position: absolute;
-      top: 0px;
-      left: 0px;
+    .container{
+      postiton:relative;
     }
-    .sign{
-      border:5px solid #021a40;
-      z-index:3;
-      left:25%;
-      top:10%;
+    .container img{
+      width:100%;
+      height:auto;
+      z-level:1;
     }
-    .map{
-      z-index:1;
+    .container input{
+      position: absolute;
+      top: 90%;
+      left: 4%;
+      z-level:2;
     }
 
   </style>
@@ -46,17 +29,22 @@
 
 <body>
 
+  <div class="container">
+    <img class="map" src="static/frontmapF.png">
 
     <div class = "button1">
       <form method="POST" action="/call">
-        <button type="submit">Call California!</button>
+        <input type="image" src="static/calli2.png"/>
       </form>
     </div>
+  </div>
 
 
-  <img class="sign" src='static/callifornia.png'>
 
-  <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=San+Francisco,CA&zoom=6&size=1000x500&scale=2&maptype=roadmap&key=AIzaSyB-3lXIqJLkzN-Wjb2twA2WaNJKLkc6Ybo">
+
+
+
+
 
 
 

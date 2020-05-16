@@ -11,40 +11,37 @@
     h3{
       font-family:Roboto;
       border: 2px solid #021a40;
-      width:140px;
+      width:290px;
+      height:40px;
+      font-size:40px;
       padding: 5px;
       background-color: #FFFFFF;
       position:absolute;
-      top:75%;
-      left:42%;
+      top:77%;
+      left:30%;
     }
     img{
 
     }
     .map{
-      border:5px solid #021a40;
+      border:2px solid #021a40;
       position:absolute;
       left:40%;
       top:40%;
     }
     .img{
-      border:5px solid #021a40;
+      border:2px solid #021a40;
       position:absolute;
       left:35%;
       top:5%;
     }
-
     a{
-      border: 2px solid #021a40;
-      padding: 5px;
-      font-family: Roboto;
-      background-color: #FFFFFF;
-      color: #000000;
-      text-decoration:none;
       position:absolute;
-      top:85%;
-      left:43%;
+      left:55%;
+      top:80%;
     }
+
+
 
 
   </style>
@@ -57,7 +54,9 @@
 
 
 
-  <a href="tel: {{ phone }}">Click here to call!</a>
+  <a href="tel: {{ phone }}">
+    <img src="static/calli4.png" width="350" height="100"/>
+  </a>
   <img src = "static/callifornia.png" class = "img">
   <img src = "{{ url }}" class = "map">
 
