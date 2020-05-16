@@ -46,9 +46,9 @@ def addData(list,forUpload):
                             print(placeData)
 
 
-t1 = threading.Thread(target=addData,args=(coords[1050:1061],forUpload))
-t2 = threading.Thread(target=addData,args=(coords[820:830],forUpload))
-t3 = threading.Thread(target=addData,args=(coords[930:940],forUpload))
+t1 = threading.Thread(target=addData,args=(coords[120:130],forUpload))
+t2 = threading.Thread(target=addData,args=(coords[230:240],forUpload))
+t3 = threading.Thread(target=addData,args=(coords[440:450],forUpload))
 t1.start()
 t2.start()
 t3.start()

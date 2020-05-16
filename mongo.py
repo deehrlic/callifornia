@@ -20,3 +20,9 @@ def addtoDB(tuple,src):
         src.insert(db_toAdd)
     else:
         print("its in already????")
+
+def randomDB(src):
+    res = list(src.find({}))
+    return res[random.randint(0, len(res) - 1)]
+
+print(randomDB(connectMongo()))
