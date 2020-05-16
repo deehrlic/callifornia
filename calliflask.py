@@ -11,6 +11,10 @@ def home():
 
     return render_template("front.html")
 
+@app.route("/potato")
+def ouch():
+    return("OHNO!")
+
 @app.route("/call",methods=['GET', 'POST'])
 def call():
     isOpen = False
