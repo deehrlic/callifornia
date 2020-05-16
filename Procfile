@@ -1,1 +1,1 @@
-web: gunicorn calliflask:app --preload
+web: gunicorn calliflask:app 
