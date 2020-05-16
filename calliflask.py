@@ -27,8 +27,10 @@ def call():
         if 'opening_hours' in place['result']:
             open = place['result']['opening_hours']['open_now']
             if open == True:
-                url = "https://maps.googleapis.com/maps/api/staticmap?center="+str(m['coords'][0])+","+str(m['coords'][1])+"&zoom=12&size=300x300&key=AIzaSyB-3lXIqJLkzN-Wjb2twA2WaNJKLkc6Ybo"
-                return render_template("callpage.html", phone=phone, url=url)
+                ### ADD CALI CHECK #######
+                if 'CA' in m['faddr']:
+                    url = "https://maps.googleapis.com/maps/api/staticmap?center="+str(m['coords'][0])+","+str(m['coords'][1])+"&zoom=12&size=200x200&key=AIzaSyB-3lXIqJLkzN-Wjb2twA2WaNJKLkc6Ybo"
+                    return render_template("callpage.html", phone=phone, url=url)
 
 
 if __name__ == "__main__":

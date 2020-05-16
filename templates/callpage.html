@@ -10,11 +10,40 @@
 
     h3{
       font-family:Roboto;
+      border: 2px solid #021a40;
+      width:140px;
+      padding: 5px;
+      background-color: #FFFFFF;
+      position:absolute;
+      top:75%;
+      left:42%;
     }
     img{
-      top: 20vh;
-      left: 50vh;
+
+    }
+    .map{
       border:5px solid #021a40;
+      position:absolute;
+      left:40%;
+      top:40%;
+    }
+    .img{
+      border:5px solid #021a40;
+      position:absolute;
+      left:35%;
+      top:5%;
+    }
+
+    a{
+      border: 2px solid #021a40;
+      padding: 5px;
+      font-family: Roboto;
+      background-color: #FFFFFF;
+      color: #000000;
+      text-decoration:none;
+      position:absolute;
+      top:85%;
+      left:43%;
     }
 
 
@@ -25,7 +54,12 @@
 <body>
 
   <h3> {{ phone }} </h3>
-  <img src = "{{ url }}">
+
+
+
+  <a href="tel: {{ phone }}">Click here to call!</a>
+  <img src = "static/callifornia.png" class = "img">
+  <img src = "{{ url }}" class = "map">
 
 
 
