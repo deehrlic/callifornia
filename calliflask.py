@@ -4,7 +4,7 @@ import googlemaps
 
 app = Flask(__name__)
 
-maps = googlemaps.Client(key='AIzaSyB-3lXIqJLkzN-Wjb2twA2WaNJKLkc6Ybo')
+maps = googlemaps.Client(key='API key')
 
 @app.route("/",methods=['GET', 'POST'])
 def home():
