@@ -2,7 +2,7 @@ from pymongo import MongoClient
 import random
 
 def connectMongo():
-    client = MongoClient('mongodb+srv://callifornia:cali@ruhacksdb-jtuiy.gcp.mongodb.net/test?retryWrites=true&w=majority')
+    client = MongoClient('API key')
     db = client.get_database('RUHacksDB')
     src = db.source
     return src
