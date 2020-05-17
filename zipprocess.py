@@ -13,8 +13,8 @@ for r in res:
     coords += [(r.zipcode,r.lat,r.lng)]
 
 #API keys
-radar = RadarClient('prj_test_sk_a014dc93fd7af85ef7ae08dba757a3316987e979')
-maps = googlemaps.Client(key='AIzaSyB-3lXIqJLkzN-Wjb2twA2WaNJKLkc6Ybo')
+radar = RadarClient('API KEY')
+maps = googlemaps.Client(key='API KEY')
 src = mongo.connectMongo()
 
 #mongo data collection storage
