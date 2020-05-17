@@ -1,5 +1,7 @@
 # callifornia
 
+created by drew ehrlich and farhan saeed
+
 https://devpost.com/software/callifornia
 
 File details/what each file of importance does:
